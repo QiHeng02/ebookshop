@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yet Another e-Bookshop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: beige;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header form {
+            display: flex;
+            align-items: center;
+        }
+
+        header label {
+            margin-right: 10px;
+        }
+
+        header select, header input[type="submit"] {
+            padding: 10px 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        header input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        header input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        main {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Yet Another e-Bookshop!</h1>
+        <form method="get" action="eshopquery">
+            <label for="author">Choose an author:</label>
+            <select name="author" id="author" size="1">
+                <option value="Tan Ah Teck">Ah Teck</option>
+                <option value="Mohammad Ali">Ali</option>
+                <option value="Kumar">Kumar</option>
+            </select>
+            <input type="submit" value="Filter" />
+        </form>
+    </header>
+    <main>
+        </main>
+</body>
+</html>
